@@ -1,0 +1,100 @@
+
+/* Base Styling */
+body {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #ff9a9e, #fecfef);
+  color: #fff;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+p{
+
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 4px 10px black;
+}
+.container{
+
+  z-index: 100;
+}
+
+.quote-Box{
+
+  color: black;
+
+}
+h1 {
+  font-size: 2.5em;
+  margin-top: 20px;
+  color: #ffe400;
+  text-shadow: 0 0 5px #ffe400, 0 0 10px #ff0080;
+  animation: glow 2s infinite alternate;
+}
+h2 {
+  font-size: 1.8em;
+  color: #ffd1dc;
+  text-shadow: 0 0 5px #ff85a1, 0 0 8px #ff4da6;
+}
+button {
+  padding: 10px 30px;
+  font-size: 1em;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff165d, #ff9a9e);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #ff85a1, #ff165d);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.7);
+}
+#surprise {
+  margin-top: 20px;
+  display: none;
+}
+.emoji-cake {
+  font-size: 4em;
+  margin: 20px 0;
+  animation: bounce 1.5s infinite alternate;
+}
+#quote-box {
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  font-size: 1.2em;
+  color: black;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  display: none;
+
+}
+/* Animations */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ffe400, 0 0 15px #ff0080;
+  }
+  to {
+    text-shadow: 0 0 5px #ffe400, 0 0 10px #ff0080;
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.owner{
+  position: fixed;
+
+  top:5px;
+  font-size: 8px;
+}
