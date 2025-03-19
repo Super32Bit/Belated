@@ -1,5 +1,5 @@
 
-const name = "name";
+const name = "Nick Name Noo!";
 document.getElementById("name").innerText = name;
 
 const quotes = [
