@@ -1,5 +1,5 @@
 const name = "name";
-document.getElementById("name").innerText = name;
+document.getElementById("Nick'name Noo").innerText = name;
 
 const quotes = [
   "You are my today and all of my tomorrows. ❤️",
